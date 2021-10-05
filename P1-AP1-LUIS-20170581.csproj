@@ -1,0 +1,19 @@
+﻿<Project Sdk="Microsoft.NET.Sdk">
+
+  <PropertyGroup>
+    <OutputType>WinExe</OutputType>
+    <TargetFramework>net5.0-windows</TargetFramework>
+    <RootNamespace>P1_AP1_LUIS_20170581</RootNamespace>
+    <UseWPF>true</UseWPF>
+  </PropertyGroup>
+
+  <ItemGroup>
+    <Folder Include="Entidades\" />
+    <Folder Include="Dal\" />
+    <Folder Include="Bll\" />
+    <Folder Include="Data\" />
+    <Folder Include="Ui\Consultas\" />
+    <Folder Include="Ui\Registros\" />
+  </ItemGroup>
+
+</Project>
