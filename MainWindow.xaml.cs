@@ -24,5 +24,10 @@ namespace P1_AP1_LUIS_20170581
         {
             InitializeComponent();
         }
+
+        private void aportesMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+
+        }
     }
 }
