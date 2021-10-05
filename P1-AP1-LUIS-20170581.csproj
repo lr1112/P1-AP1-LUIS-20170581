@@ -9,8 +9,6 @@
 
   <ItemGroup>
     <Folder Include="Data\" />
-    <Folder Include="Ui\Consultas\" />
-    <Folder Include="Ui\Registros\" />
   </ItemGroup>
 
   <ItemGroup>

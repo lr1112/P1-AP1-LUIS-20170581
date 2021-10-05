@@ -5,8 +5,21 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P1_AP1_LUIS_20170581"
         mc:Ignorable="d"
-        Title="MainWindow" Height="450" Width="800">
+        Title="REGISTRO APORTES" Height="450" Width="800">
     <Grid>
+        <StackPanel>
+            <Menu Height="18">
+                <MenuItem Header="Registros">
+                    <MenuItem x:Name="RegistrosMenuItem" Header="Registro de aportes" Click="RegistrosMenuItem_Click"/>
+                </MenuItem>
+
+                <MenuItem Header="Consultas">
+                    <MenuItem x:Name="ConsultaMenuItem" Header="Consulta de Roles" Click="ConsultaMenuItem_Click"/>
+                </MenuItem>
+
+                
+            </Menu>
+        </StackPanel>
 
     </Grid>
 </Window>

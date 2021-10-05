@@ -1,4 +1,6 @@
-﻿using System;
+﻿using P1_AP1_LUIS_20170581.Bll;
+using P1_AP1_LUIS_20170581.Entidades;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -24,9 +26,21 @@ namespace P1_AP1_LUIS_20170581.Ui.Consultas
             InitializeComponent();
         }
 
+      
+
         private void BuscarButton_Click(object sender, RoutedEventArgs e)
         {
+            var listado = new List<Aportes>();
 
+            switch (FiltroComboBox.SelectedIndex)
+            {
+                case 0: //listado
+                    listado = AportesBll.GetAportes();
+
+                    break;
+            }
+            DatosDataGrid.ItemsSource = null;
+            DatosDataGrid.ItemsSource = listado;
         }
     }
 }

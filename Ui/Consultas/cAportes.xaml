@@ -5,8 +5,35 @@
         xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
         xmlns:local="clr-namespace:P1_AP1_LUIS_20170581.Ui.Consultas"
         mc:Ignorable="d"
-        Title="cAportes" Height="450" Width="800">
+        Title="CONSULTA APORTES" Height="450" Width="420">
     <Grid>
-        
+        <StackPanel Orientation="Vertical" Margin="10,5,10,0">
+            <StackPanel Orientation="Horizontal" Height="58">
+                <StackPanel Margin="5,0">
+                    <Label x:Name="FiltroLabel" Content="Filtro:"/>
+                    <ComboBox x:Name="FiltroComboBox" Width="100" Height="25">
+                        <ComboBoxItem x:Name="ListadoComboBoxItem" Content="Listado"/>
+                    </ComboBox>
+                </StackPanel>
+
+                <Button x:Name="BuscarButton" Height="30" Width="85" Margin="0,20,0,0" Click="BuscarButton_Click">
+                    <StackPanel Orientation="Horizontal">
+                        <Label Content="Buscar"/>
+                    </StackPanel>
+                </Button>
+            </StackPanel>
+
+            <StackPanel HorizontalAlignment="Left">
+
+                <DataGrid x:Name="DatosDataGrid" Height="240" Width="400" AutoGenerateColumns="False">
+                    <DataGrid.Columns>
+                        <DataGridTextColumn Header="Aporte Id" Binding="{Binding AporteId}"/>
+                        <DataGridTextColumn Header="Fecha" Binding="{Binding Fecha}"/>
+                        <DataGridTextColumn Header="Concepto" Binding="{Binding Concepto}"/>
+                        <DataGridTextColumn Header="Monto" Binding="{Binding Monto}"/>
+                    </DataGrid.Columns>
+                </DataGrid>
+            </StackPanel>
+        </StackPanel>
     </Grid>
 </Window>

@@ -12,7 +12,7 @@ namespace P1_AP1_LUIS_20170581.Entidades
         [Key]
         public int AporteId { get; set; }
 
-        public DateTime Fecha { get; set; }
+        public DateTime Fecha { get; set; } = DateTime.Now;
 
         public string Persona { get; set; }
         public string Concepto { get; set; }

@@ -1,4 +1,6 @@
-﻿using System;
+﻿using P1_AP1_LUIS_20170581.Ui.Consultas;
+using P1_AP1_LUIS_20170581.Ui.Registros;
+using System;
 using System.Collections.Generic;
 using System.Linq;
 using System.Text;
@@ -25,9 +27,20 @@ namespace P1_AP1_LUIS_20170581
             InitializeComponent();
         }
 
-        private void aportesMenuItem_Click(object sender, RoutedEventArgs e)
-        {
+       
 
+       
+
+        private void RegistrosMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            rAportes Aportes = new rAportes();
+            Aportes.Show();
+        }
+
+        private void ConsultaMenuItem_Click(object sender, RoutedEventArgs e)
+        {
+            cAportes consulta = new cAportes();
+            consulta.Show();
         }
     }
 }
